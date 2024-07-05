@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ToDoListAPI.Core.DTO.Task
 {
-    public class TaskResponse
+    public class TaskResponseDTO
     {
         public Guid Id { get; set; }
         public string Title { get; set; }

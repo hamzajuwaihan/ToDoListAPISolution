@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ToDoListAPI.Core.DTO.Account
 {
-    public class RegisterDTO
+    public class RegisterRequestDTO
     {
         [Required(ErrorMessage = "Username can't be blank")]
         public string UserName { get; set; }
