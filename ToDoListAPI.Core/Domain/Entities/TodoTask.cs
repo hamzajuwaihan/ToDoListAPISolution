@@ -10,7 +10,7 @@ using ToDoListAPI.Core.Enums;
 
 namespace ToDoListAPI.Core.Domain.Entities
 {
-    public class Task
+    public class TodoTask
     {
         [Key]
         public Guid Id { get; set; }
@@ -26,7 +26,7 @@ namespace ToDoListAPI.Core.Domain.Entities
 
         public virtual ApplicationUser ApplicationUser { get; set; }  // Navigation property
 
-        public Task(string title, string description, DateTime dueDate, Guid userId)
+        public TodoTask(string title, string description, DateTime dueDate, Guid userId)
         {
             Id = Guid.NewGuid();
             Title = title;
@@ -37,8 +37,8 @@ namespace ToDoListAPI.Core.Domain.Entities
         }
 
         // Parameterless constructor needed by EF Core
-        public Task() { }
+        public TodoTask() { }
     }
 
 }
-}
+
